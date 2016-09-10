@@ -2,7 +2,7 @@ $("#player").load("./templates/characters/mario-standing.html")
 //$("#player2").load("./templates/characters/luigi-standing.html")
 var player = document.getElementById("player");
 
-$(document.body).on('keydown', function(e) {
+$(document.body).on('keydown', function(e)) {
 	switch (e.which) {
 		case 37:
 			console.log('left arrow key pressed!');
@@ -12,14 +12,14 @@ $(document.body).on('keydown', function(e) {
 			console.log('right arrow key pressed!');
 			break;
 		case 32:
-			playAudio("jump-sound");
-			jump("mario");
+			playAudio(".sounds/jump.mp3");
+			jump("player");
 			break;
 		case 16:
 			console.log("shift pressed");
 			break;
 	}
-});
+};
 
 function playAudio(className) {
 	document.getElementById(className).play();
