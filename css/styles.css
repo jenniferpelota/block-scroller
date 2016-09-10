@@ -102,3 +102,46 @@
 	width: 50px;
 }
 
+/* Dropdown Button*/
+.dropbtn {
+	background-color: #4CAF50;
+	color: white;
+	padding: 16px;
+	font-size: 16px;
+	border: none;
+	cursor: pointer;
+}
+
+/*Dropdown button on hover & focus */
+.drorpbtn:hover, .dropbtn:focus {
+	background-color: #3E8E41;
+}
+
+/* Container <div> for positioning */
+.dropdown {
+	position: relative;
+	display: inline-block;
+}
+
+/* Dropdown Content (Default: hidden) */
+.dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: #F9F9F9;
+	min-width: 160px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+/*Text inside dropdown */
+.dropdown-content a {
+	color: black;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+}
+
+/* Change color of dropdown options on hover */
+.dropdown-content a:hover {background-color: #F1F1F1}
+
+/*Toggle into dropdown menu */
+.show {display.block;}
